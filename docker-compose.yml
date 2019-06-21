@@ -3,6 +3,7 @@ services:
   redis-server:
     image: 'redis'
   node-app:
+    io.rancher.scheduler.affinity:host_label: myhost=myhost
     image: rajeshworld/node:latest
     ports:
       - "4041:8081"
