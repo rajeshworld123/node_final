@@ -1,0 +1,9 @@
+version: '2'
+services: 
+  redis-server:
+    image: 'redis'
+  node-app:
+    image: rajeshworld/node:latest
+    ports:
+      - "4041:8081"
+
