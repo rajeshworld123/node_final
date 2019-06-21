@@ -4,7 +4,8 @@ services:
     image: 'redis'
   node-app:
     labels:
-      io.rancher.scheduler.affinity:host_label: myhost=myhost
+      io.rancher.scheduler.affinity:host_label: newhost=newhost
+
     image: rajeshworld/node:latest
     ports:
       - "4041:8081"
